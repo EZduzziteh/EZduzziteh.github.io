@@ -13,3 +13,31 @@ tabs.forEach(tab => {
     document.getElementById(target).classList.add("active");
   });
 });
+
+
+
+// site.js
+
+// A reusable function to render a list of project cards
+function renderProjects(projects, containerSelector) {
+  const container = document.querySelector(containerSelector);
+  container.innerHTML = ""; // clear old content
+
+  projects.forEach(project => {
+    const card = document.createElement("div");
+    card.className = "project-card";
+    card.innerHTML = `
+      <img src="${project.img}" alt="${project.alt}" />
+      <div class="project-info">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+// Run on page load
+document.addEventListener("DOMContentLoaded", () => {
+  renderProjects(gameProjects, ".project-grid");
+});
