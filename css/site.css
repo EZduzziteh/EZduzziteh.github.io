@@ -105,6 +105,7 @@ footer {
   cursor: pointer;
   transition: transform 0.3s ease;
   background: #fff;
+  cursor: pointer;
 }
 
 .project-card img {
@@ -366,4 +367,204 @@ footer {
   color: #0077cc;
   text-decoration: none;
   font-weight: bold;
+}
+/* === PROJECT OVERLAY === */
+.project-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-gradient);
+    color: var(--text-dark, #2c3e50);
+    z-index: 9999;
+    overflow-y: auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.project-overlay .overlay-content {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.project-overlay button.close-overlay {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: var(--primary, #2e7d32);
+    cursor: pointer;
+    transition: 0.2s ease;
+    z-index: 10000;
+}
+
+.project-overlay button.close-overlay:hover {
+    color: var(--secondary, #42a5f5);
+}
+
+.project-overlay section {
+    margin-bottom: 60px;
+    background: var(--card-bg, rgba(255,255,255,0.75));
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-overlay .hero h1 {
+    font-size: 3rem;
+    color: var(--primary, #2e7d32);
+    text-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+    margin-bottom: 10px;
+}
+
+.project-overlay .tagline {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+.project-overlay .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.project-overlay .gallery img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-overlay .gallery img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-overlay .video-container iframe {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.project-overlay .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.project-overlay .tech-grid div {
+    padding: 8px 16px;
+    background: var(--accent, #a5d6a7);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(165, 214, 167, 0.4);
+}
+
+/* === LIGHTBOX INSIDE OVERLAY === */
+.project-overlay .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-overlay .lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.project-overlay .lightbox .close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.project-overlay .lightbox .close:hover {
+    color: var(--primary, #2e7d32);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Scrollbar styling for overlay */
+.project-overlay::-webkit-scrollbar {
+    width: 12px;
+}
+
+.project-overlay::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+}
+
+.project-overlay::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    border: 3px solid rgba(255,255,255,0.1);
+}
+/* Ensure JS overlay matches CSS styles */
+#project-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-gradient, rgba(0,0,0,0.95));
+    color: var(--text-dark, #2c3e50);
+    z-index: 9999;
+    overflow-y: auto;
+    padding: 40px 20px;
+    display: none; /* JS toggles this */
+    justify-content: center;
+}
+
+/* Make overlay content match your .project-overlay layout */
+#project-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#project-overlay .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#project-overlay .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#project-overlay .tech-grid div {
+    padding: 8px 16px;
+    background: var(--accent, #a5d6a7);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
