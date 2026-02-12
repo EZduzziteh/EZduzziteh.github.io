@@ -17,10 +17,10 @@ const gameProjects = [
         video: "https://www.youtube.com/embed/pkNsK55cnpc",
         tech: ["Unity", "C#", "NVIDIA Flex", "GPU Optimization"],
         colors: {
-            primary: "#2e7d32",
-            secondary: "#42a5f5",
-            accent: "#a5d6a7",
-            bgGradient: "linear-gradient(135deg, #e0f7fa, #d0f0c0, #c0e8e0)"
+            primary: "#9e4a9a",
+            secondary: "#d17db8",
+            accent: "#dfdbde",
+            bgGradient: "linear-gradient(135deg, #dcb3e4, #a45db9, #963188)"
         },
         links: {
             steam: "https://store.steampowered.com/app/2451550/Jeller_Fellers/",
@@ -39,7 +39,7 @@ const gameProjects = [
         tech: ["Unity", "C#"],
         colors: {
             primary: "#ff7043",
-            secondary: "#42a5f5",
+            secondary: "#857840",
             accent: "#ffcc80",
             bgGradient: "linear-gradient(135deg, #ffe0b2, #ffccbc, #ffab91)"
         },
@@ -71,7 +71,7 @@ const gameProjects = [
         video: "",
         tech: ["Unity", "C#"],
         colors: {
-            primary: "#f57f17",
+            primary: "#f55d17",
             secondary: "#ffb300",
             accent: "#ffe082",
             bgGradient: "linear-gradient(135deg, #fff8e1, #ffecb3, #ffe082)"
@@ -86,9 +86,9 @@ const gameProjects = [
         video: "",
         tech: ["Unity", "C#"],
         colors: {
-            primary: "#009688",
-            secondary: "#4db6ac",
-            accent: "#b2dfdb",
+            primary: "#009664",
+            secondary: "#4d98b6",
+            accent: "#d2f3f0",
             bgGradient: "linear-gradient(135deg, #e0f2f1, #b2dfdb, #80cbc4)"
         },
         links: { itch: "https://ezduzziteh.itch.io/temple-explorer" }
@@ -101,7 +101,7 @@ const gameProjects = [
         video: "https://www.youtube.com/watch?v=Omy6vstkaPQ",
         tech: ["Unity", "C#"],
         colors: {
-            primary: "#3e2723",
+            primary: "#2c2c2c",
             secondary: "#795548",
             accent: "#d7ccc8",
             bgGradient: "linear-gradient(135deg, #efebe9, #d7ccc8, #bcaaa4)"
@@ -285,9 +285,9 @@ const toolProjects = [
         video: "https://www.youtube.com/watch?v=bkNxPssp4F8",
         tech: ["Unity", "Editor Tool", "C++", "Blueprint"],
         colors: {
-            primary: "#388e3c",
-            secondary: "#81c784",
-            accent: "#c8e6c9",
+            primary: "#925c1f",
+            secondary: "#b67752",
+            accent: "#c49c18",
             bgGradient: "linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7)"
         },
         links: { demo: "https://www.youtube.com/watch?v=bkNxPssp4F8" }
@@ -300,10 +300,10 @@ const toolProjects = [
         video: "https://www.youtube.com/watch?v=LDQ8EeYy7zg",
         tech: ["Unity", "Editor Tool"],
         colors: {
-            primary: "#388e3c",
-            secondary: "#81c784",
-            accent: "#c8e6c9",
-            bgGradient: "linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7)"
+            primary: "#4d4d4d",
+            secondary: "#858585",
+            accent: "#e0e0e0",
+            bgGradient: "linear-gradient(135deg, #e8f5e9, #828382, #555555)"
         },
         links: { demo: "https://www.youtube.com/watch?v=LDQ8EeYy7zg" }
     },
