@@ -265,7 +265,7 @@ const toolProjects = [
     {
         title: "Foliage Spawner",
         description: "Automated foliage placement for large environments.",
-        img: "/images/tools/procedural foliage.png",
+        img: "images/tools/procedural foliage.png",
         screenshots: [],
         video: "https://www.youtube.com/watch?v=4u6GDCMFi6w",
         tech: ["Unity", "Editor Tool"],
@@ -280,7 +280,7 @@ const toolProjects = [
     {
         title: "Procedural Generation: Terrain, Overworld and Dungeons",
         description: "Created in Unreal C++, Overworld is generated procedurally, with various locations being created that you can go into, which also feature procedural generation. The terrain is dynamically generated at runtime and can be loaded/unloaded as needed",
-        img: "/images/tools/procedural terrain.png",
+        img: "images/tools/procedural terrain.png",
         screenshots: [],
         video: "https://www.youtube.com/watch?v=bkNxPssp4F8",
         tech: ["Unity", "Editor Tool", "C++", "Blueprint"],
@@ -295,7 +295,7 @@ const toolProjects = [
     {
         title: "Wave Designer",
         description: "A visual scripting tool to define enemy waves, timing, and patterns for tower defense levels.",
-        img: "/images/tools/wavedesigner.png",
+        img: "images/tools/wavedesigner.png",
         screenshots: [],
         video: "https://www.youtube.com/watch?v=LDQ8EeYy7zg",
         tech: ["Unity", "Editor Tool"],
@@ -314,7 +314,7 @@ const programmingProjects = [
     {
         title: "Fog of War System",
         description: "Built in Unity C#, uses a Render Texture to handle visibility in-game.",
-        img: "/images/programming/fog of war system.jpg",
+        img: "images/programming/fog of war system.jpg",
         screenshots: [],
         video: "https://www.youtube.com/embed/rWdGUxNkFvI",
         tech: ["Unity", "C#"],
@@ -329,7 +329,7 @@ const programmingProjects = [
     {
         title: "Dynamic Topic Based Dialogue System",
         description: "Created in Unreal C++, allows for various dialogue topics to be learned by the player, and asked about to npcs that know about the topic. Topics can be learned from world events, talking to npcs, or reading notes.",
-        img: "/images/programming/tpic based dialogue system.png",
+        img: "images/programming/tpic based dialogue system.png",
         screenshots: [],
         video: "https://youtu.be/VmbcoLSQpNc?t=372",
         tech: ["Unreal", "C++", "Blueprint"],
@@ -344,7 +344,7 @@ const programmingProjects = [
     {
         title: "Ocean Simulation + Wind System + Sailing System",
         description: "Built in Unity, using a custom shader to render water using layered Gerstner waves",
-        img: "/images/programming/ocean sailing system.png",
+        img: "images/programming/ocean sailing system.png",
         screenshots: [],
         video: "https://www.youtube.com/watch?v=KUW0B8_nFng&feature=youtu.be",
         tech: ["Unity", "C#", "Shader Graph"],
