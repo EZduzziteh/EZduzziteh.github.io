@@ -259,7 +259,79 @@ const gameProjects = [
         links: { itch: "https://ezduzziteh.itch.io/blockbuster" }
     }
 ];
-
+const applicationProjects = [
+    {
+        title: "Nature Counter",
+        description: "An app made with React Native that tracks time spent immersed in nature, and informs users of the health benefits they can expect based on the time that they spend.",
+        img: "images/application/nature counter screenshot.png",
+        screenshots: [],
+        video: "https://www.youtube.com/watch?v=oB6MXkudwdY",
+        tech: ["React Native","Javascript", "Mobile App"],
+        colors: {
+            primary: "#4caf50",
+            secondary: "#81c784",
+            accent: "#c8e6c9",
+            bgGradient: "linear-gradient(135deg, #a8e6cf, #dcedc1)"
+        },
+        links: { Website: "https://www.naturecounter.world/" }
+    },{
+        title: "Weather App",
+        description: "Displays the current weather, allows tracking a weekly forecast, and offers location selection to display different weathers in different locations",
+        img: "images/application/Weather App Screenshot.png",
+        screenshots: [],
+        video: "https://www.youtube.com/watch?v=R3arHr4yUpY",
+        tech: ["Desktop App","JSON","C#","Windows Forms"],
+        colors: {
+            primary: "#4caf50",
+            secondary: "#81c784",
+            accent: "#c8e6c9",
+            bgGradient: "linear-gradient(135deg, #a8e6cf, #dcedc1)"
+        },
+        links: { github: "https://github.com/EZduzziteh/Weather-Project" }
+    },{
+        title: "Line Grapher",
+        description: "An application made with windows Forms in C#, allows the user to specify points which can then be visualized as lines. Supports multiple Lines and Line Editing",
+        img: "images/application/Line Grapher screenshot.png",
+        screenshots: [],
+        video: "https://www.youtube.com/watch?v=CCkJXhqn8ZM",
+        tech: ["C#", "Windows Forms", "Desktop App"],
+        colors: {
+            primary: "#4caf50",
+            secondary: "#81c784",
+            accent: "#c8e6c9",
+            bgGradient: "linear-gradient(135deg, #a8e6cf, #dcedc1)"
+        },
+        links: { github: "https://github.com/EZduzziteh/line-Graph" }
+    },{
+        title: "Video Store Rental System",
+        description: "An application created for the management of a video rental store (Rest in peace video rentals), allows filtering by category, tracking rentals and late returns, top movies filters",
+        img: "images/application/movie app.png",
+        screenshots: [],
+        video: "https://www.youtube.com/watch?v=rkCHtB8WO6g",
+        tech: ["React Native", "Javascript", "Figma", "Mobile App"],
+        colors: {
+            primary: "#4caf50",
+            secondary: "#81c784",
+            accent: "#c8e6c9",
+            bgGradient: "linear-gradient(135deg, #a8e6cf, #dcedc1)"
+        },
+        links: { demo: "https://www.youtube.com/watch?v=rWdGUxNkFvI&feature=youtu.be" }
+    },{
+        title: "College Website Redesign",
+        description: "A redesign of my college's website, allows for tracking registered courses, and viewing course availability.",
+        img: "images/application/school-website-redesign.png",
+        screenshots: [],
+        video: "https://www.youtube.com/watch?v=V6289Clq-gQ",
+        tech: ["React", "Javascript","HTML","CSS", "Web App"],
+        colors: {
+            primary: "#4caf50",
+            secondary: "#81c784",
+            accent: "#c8e6c9",
+            bgGradient: "linear-gradient(135deg, #a8e6cf, #dcedc1)"
+        },
+        links: { github: "https://github.com/EZduzziteh/School-Website" }
+    }
+];
 
 const toolProjects = [
     {
@@ -359,28 +431,7 @@ const programmingProjects = [
     // Add more programming projects here
 ];
 
-// === RENDER FUNCTION ===
-function renderCards(projects, containerSelector) {
-    const container = document.querySelector(containerSelector);
-    container.innerHTML = "";
 
-    projects.forEach(project => {
-        const card = document.createElement("div");
-        card.className = "project-card";
-
-        card.innerHTML = `
-            <img src="${project.img}" alt="${project.title}">
-            <div class="project-info">
-                <h3>${project.title}</h3>
-                <p>${project.description}</p>
-            </div>
-        `;
-
-        card.addEventListener("click", () => openOverlay(project));
-
-        container.appendChild(card);
-    });
-}
 // ================================
 // TAB LOGIC
 // ================================
@@ -405,7 +456,34 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCards(gameProjects, ".project-grid");
     renderCards(toolProjects, ".tool-grid");
     renderCards(programmingProjects, ".programming-grid");
+    renderCards(applicationProjects, ".application-grid");
 });
+
+
+
+// === RENDER FUNCTION ===
+function renderCards(projects, containerSelector) {
+    const container = document.querySelector(containerSelector);
+    container.innerHTML = "";
+
+    projects.forEach(project => {
+        const card = document.createElement("div");
+        card.className = "project-card";
+
+        card.innerHTML = `
+            <img src="${project.img}" alt="${project.title}">
+            <div class="project-info">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+            </div>
+        `;
+
+        card.addEventListener("click", () => openOverlay(project));
+
+        container.appendChild(card);
+    });
+}
+
 
 
 // ================================
